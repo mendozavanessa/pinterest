@@ -22,15 +22,9 @@ header{
     text-align: center!important;
     display: inline-block;
 }
-/*ul, menu, dir {
+ul, menu, dir {
     display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
-}*/
+}
 li{
   display: inline-block;
 }
@@ -47,11 +41,6 @@ li{
     color: #b5b5b5;
     text-decoration: none;
 }
-a:-webkit-any-link {
-    color: -webkit-link;
-    cursor: auto;
-    text-decoration: underline;
-}
 .icon-pinterest2 {
     position: relative;
     display: inline-block;
@@ -62,6 +51,11 @@ a:-webkit-any-link {
     font-size: 1.33333333em;
     line-height: .75em;
     vertical-align: -15%;
+}
+a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: auto;
+    text-decoration: underline;
 }
 .menu li .red {
     color: #BD081C;
@@ -74,53 +68,36 @@ a:-webkit-any-link {
     width: 70%;
     padding: 10px;
 }
-.menu .input-box , .menu li {
-  display: inline-block;
+
+.menu .input-box .box-lupa {
+    width: 85%;
 }
-.menu li {
-    font-size: 16px;
-    font-weight: 700;
-    padding: 0 5px;
+div {
+    display: block;
+}
+
+li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+.menu li i{
+    padding: 0;
+}
+.icon-search {
+  position: absolute;
+  left: 180px;
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
 }
 .menu .input-box .box-lupa input {
-    width: 93%;
+    width: 85%;
     border: none;
     line-height: 20px;
     font-size: 18px;
     outline: 0;
     background-color: transparent;
-}
-input {
-    -webkit-appearance: textfield;
-    background-color: white;
-    -webkit-rtl-ordering: logical;
-    user-select: text;
-    cursor: auto;
-    padding: 1px;
-    border-width: 2px;
-    border-style: inset;
-    border-color: initial;
-    border-image: initial;
-}
-input, textarea, select, button {
-    text-rendering: auto;
-    color: initial;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    text-shadow: none;
-    display: inline-block;
-    text-align: start;
-    margin: 0em;
-    font: 13.3333px Arial;
-}
-input, textarea, select, button, meter, progress {
-    -webkit-writing-mode: horizontal-tb;
-}
-.menu .input-box .box-lupa {
-    width: 85%;
-    display: inline-block;
 }
 
 .menu li i{
@@ -128,23 +105,11 @@ input, textarea, select, button, meter, progress {
 }
 
 .icon-cross{
-  display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
+    font-size: 10px;
+    position: relative;
+    left: 390px;
 }
 
-.icon-search {
-  display: inline-block;
-font: normal normal normal 14px/1 FontAwesome;
-font-size: inherit;
-text-rendering: auto;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
 
 .icon-user {
     position: relative;
@@ -183,10 +148,11 @@ text-rendering: auto;
   display: inline-block;
 }
 .sub-menu {
-    padding: 10px 0;
+    padding: 5px 0;
     width: 100%;
     margin: 0;
 }
+
 .sub-menu .caja-1, .sub-menu .caja-2, .sub-menu .caja-3, .sub-menu .caja-4, .sub-menu .caja-5, .sub-menu .caja-6, .sub-menu .caja-7, .sub-menu .caja-8, .sub-menu .caja-9 {
     border-radius: 6px;
     background-size: cover;
